@@ -1,4 +1,8 @@
-TARGET_EXEC = app_template
+#
+#	o_0
+#
+
+TARGET_EXEC = app_nameme #name me please
 CC = g++
 BUILD_DIR ?= ./build
 SRC_DIRS ?= ./src
@@ -30,7 +34,7 @@ $(BUILD_DIR)/%.cpp.o: %.cpp
 	$(MKDIR_P) $(dir $@)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
 
-.PHONY: clean
+.PHONY: clean run
 
 clean:
 	$(RM) -r $(BUILD_DIR)
