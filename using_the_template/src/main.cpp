@@ -8,8 +8,6 @@
  */
 
 #include "main.hpp"
-#include <iostream>
-#include <string>
 
 //using namespace std;
 
@@ -18,7 +16,7 @@ int main(int argc, char *argv[])
   std::cout << "o_0\n";
   
   int i =42;
-  std::cout << ::max(7,i) << "'\n";
+  std::cout << ::max(7,i) << '\n';
   
   double f1 = 3.4;
   double f2 = -6.7;
